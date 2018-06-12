@@ -11,6 +11,8 @@ public class Runner {
 	static Logger logger = Logger.getAnonymousLogger();
 
 	public static void main(String[] args) {
+		logger.info(System.getProperty("java.runtime.version")+ "\r\n");
+		
 		MultiValueMap openbanktransfers = new MultiValueMap();
 		openbanktransfers.put("key1", "value1");
 		openbanktransfers.put("key2", "value2");
